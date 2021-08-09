@@ -115,7 +115,7 @@ public final class Filename {
         } else if (fileName.endsWith(".log")) {
             long fileNumber = Long.parseLong(removeSuffix(fileName, ".log"));
             return new FileInfo(FileType.LOG, fileNumber);
-        } else if (fileName.endsWith(".sst")) {
+        } else if (fileName.endsWith(".ldb")) {
             long fileNumber = Long.parseLong(removeSuffix(fileName, ".ldb"));
             return new FileInfo(FileType.TABLE, fileNumber);
         } else if (fileName.endsWith(".dbtmp")) {
